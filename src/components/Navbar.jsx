@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
  const Link = ({page, selectedPage,setSelectedPage}) =>{
     const lowerCasePage= page.toLowerCase();
     return (
-        <AnchorLink
+        <AnchorLink 
             className={`${selectedPage===lowerCasePage ? "text-yellow":"" }
             hover:text-yellow transition duration-500`} 
             href={`#${lowerCasePage}`}
