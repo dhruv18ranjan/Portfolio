@@ -7,6 +7,7 @@ import Skills from './Skills'
 const MySkills = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
   return (
+    <>
     <section id='skills' className='pt-10 pb-24'>
         <div className='md:flex md:justify-between md:gap:16 mt-32'>
             <motion.div  className='md:w-1/3'
@@ -52,8 +53,10 @@ const MySkills = () => {
                 <Skills />
             </motion.div>
         </div>
-
+        
     </section>
+    
+    </>
   )
 }
 
