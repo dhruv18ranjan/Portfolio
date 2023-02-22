@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import DotGroup from "./components/DotGroup";
+import  Education  from "./components/Education";
 import Landing from "./components/Landing";
 import LineGradient from "./components/LineGradient";
 import MySkills from "./components/MySkills";
 import { Navbar } from "./components/Navbar";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact"
 import useMediaQuery from "./hooks/useMediaQuery";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -44,6 +47,21 @@ function App() {
     <div>
       <Projects />
     </div>
+
+      <LineGradient />
+    
+    <div>
+          <Education />
+    </div>
+      <LineGradient />
+    
+    <div>
+          <Contact />
+    </div>
+        
+        <div>
+          <Footer />
+        </div>
 
     </div>
   );
