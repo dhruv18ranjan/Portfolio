@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import useMediaQuery from '../hooks/useMediaQuery';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import menuicon from "../assets/menu-icon.svg"
+import closeicon from "../assets/close-icon.svg"
 
  const Link = ({page, selectedPage,setSelectedPage}) =>{
     const lowerCasePage= page.toLowerCase();
@@ -60,7 +62,7 @@ export const Navbar = ({isTopOfPage,selectedPage, setSelectedPage}) => {
                 </div>
             ) : (
                 <button className=' rounded-full bg-blue p-2' onClick={()=>setIsMenuToggled(!isMenuToggled)}>
-                    <img src="../assets/menu-icon.svg" alt="menu-icon" />
+                    <img src={menuicon} alt="menu-icon" />
                 </button>
             ) }
             {/* MOBILE MENU POPUP */}
@@ -70,7 +72,7 @@ export const Navbar = ({isTopOfPage,selectedPage, setSelectedPage}) => {
                     {/* close icon */}
                     <div className='flex justify-end p-12'>
                         <button onClick={()=> setIsMenuToggled(!isMenuToggled)}>
-                            <img src="../assets/close-icon.svg" alt="close-icon" />
+                            <img src={closeicon} alt="close-icon" />
                         </button>
                     </div>
                     {/* menu items */}
