@@ -30,7 +30,7 @@ import LineGradient from "./LineGradient";
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-          <span className="text-blue">EDU</span>CATION
+          <span className="text-blue text-4xl">EDU</span>CATION
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-1/3" />

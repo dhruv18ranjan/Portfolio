@@ -32,8 +32,8 @@ const Contact = () => {
         className="flex justify-center w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <span className="text-blue">CONTACT ME</span> TO GET STARTED
+          <p className="font-playfair font-semibold text-4xl  relative left-[50px]">
+            <span className="text-blue text-4xl sm:text-4xl">CONTACT ME</span> TO GET STARTED
           </p>
           <div className="flex md:justify-end my-5 mb-16">
             <LineGradient width="mx-auto w-3/4"/>
@@ -54,7 +54,7 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/contact-image.jpeg" className="md:h-[350px] " alt="contact" />
+          <img src="../assets/me2.png" className="md:h-[450px] xs:h-[400px] relative bottom-[80px] " alt="contact" />
         </motion.div>
 
         <motion.div
@@ -73,6 +73,7 @@ const Contact = () => {
             onSubmit={onSubmit}
             action="https://formsubmit.co/dhruv07ranjan@gmail.com"
             method="POST"
+            className="relative left-[60px]"
           >
             <input
               className="w-4/5 bg-blue font-semibold placeholder-opaque-black p-3"

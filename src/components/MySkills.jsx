@@ -25,24 +25,23 @@ const MySkills = () => {
                 Asperiores animi enim ex, porro ab repellat autem illum reiciendis laudantium magni.</p>
             </motion.div>
 
-            <div className='mt-16 md:mt-0'>
+            <div className='mt-12 md:mt-0'>
                 {isAboveMediumScreens ? (
                    <div
-                        className="relative z-0 ml-20 mt-8 before:absolute before:-top-10 before:-left-10 
-                 before:w-full  before:h-full before:border-2 before:border-blue before:z-[-1]"
+                        className=""
                     >
-                        <img src="assets\skills-image.png" alt="profile" className='z-10 ' />
+                        <img src="assets\me3.png" alt="profile" className='z-10 h-[500px] relative right-[220px] bottom-[70px]' />
                     </div>
                 ):(
                     <div>
-                        <img src="assets\skills-image.png" alt="profile" className='z-10 ' />
+                        <img src="assets\me3.png" alt="profile" className='z-10 h-[400px] relative left-[100px] ' />
                     </div>
                 )}
             </div>
         </div>
 
         {/* skills */}
-        <div className='md:flex flex justify-center items-center  mt-16 gap-32'>
+        <div className='md:flex flex justify-center items-center  mt-4 gap-32'>
         <motion.div  className='mt-10'
                 initial="hidden" whileInView="visible"
                 viewport={{once:true,amount:0.5}}
