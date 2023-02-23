@@ -2,14 +2,14 @@ import { SocialMediaIcons } from "./SocialMediaIcons";
 
 const Footer = () => {
   return (
-    <footer className="h-46 bg-red pt-10">
+    <footer className="h-46 bg-blue pt-8">
       <div className="w-10/12 mx-auto">
         <SocialMediaIcons />
-        <div className="md:flex justify-center md:justify-between text-center ">
-          <p className="font-playfair font-semibold text-2xl text-yellow">
+        <div className="md:flex justify-between  md:justify-between text-center ">
+          <p className="font-playfair font-semibold text-2xl text-white">
             DHRUV RANJAN
           </p>
-          <p className="font-playfair text-md text-yellow">
+          <p className="font-playfair text-md text-white">
             ©2023 All Rights Reserved.
           </p>
         </div>

@@ -7,7 +7,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
     return (
         <AnchorLink 
             className={`${selectedPage===lowerCasePage ? "text-yellow":"" }
-            hover:text-yellow transition duration-500`} 
+            hover:text-grey transition duration-500`} 
             href={`#${lowerCasePage}`}
             onClick={()=>setSelectedPage(lowerCasePage)}
         >
@@ -20,7 +20,7 @@ export const Navbar = ({isTopOfPage,selectedPage, setSelectedPage}) => {
 
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isAboveSmallScreens = useMediaQuery("(min-width:768px)");
-    const navbarBackground = isTopOfPage? "" : "bg-red";
+    const navbarBackground = isTopOfPage? "" : "bg-blue";
 
   return (
     <nav className={` ${navbarBackground} z-40 w-full fixed top-0 py-6`}>
@@ -59,7 +59,7 @@ export const Navbar = ({isTopOfPage,selectedPage, setSelectedPage}) => {
 
                 </div>
             ) : (
-                <button className=' rounded-full bg-red p-2' onClick={()=>setIsMenuToggled(!isMenuToggled)}>
+                <button className=' rounded-full bg-blue p-2' onClick={()=>setIsMenuToggled(!isMenuToggled)}>
                     <img src="../assets/menu-icon.svg" alt="menu-icon" />
                 </button>
             ) }

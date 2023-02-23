@@ -48,6 +48,7 @@ body {
     }
   }
 
-  .vertical-timeline-element .vertical-timeline-element-icon{
-    background: #DC4492;
+ .vertical-timeline .vertical-timeline-element .vertical-timeline-element-icon{
+    background: white;
   }
+  

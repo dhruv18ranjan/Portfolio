@@ -18,7 +18,7 @@ const MySkills = () => {
                             visible:{opacity:1, x:0}
                         }}>
                 <p className='font-playfair font-semibold text-4xl mb-5'>
-                    MY <span className='text-red'>SKILLS</span>
+                    MY <span className='text-blue'>SKILLS</span>
                 </p>
                 <LineGradient width='w-1/3' />
                 <p className='mt-10 mb-7'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 

@@ -13,7 +13,7 @@ import LineGradient from "./LineGradient";
 
 
  const Education = () => {
-    let schoolIconStyles={background:"#f9c74f"}
+    let schoolIconStyles={background:"white"}
   return (
     <section id="education" className="pt-24 mb-6">
 
@@ -30,7 +30,7 @@ import LineGradient from "./LineGradient";
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-          <span className="text-red">EDU</span>CATION
+          <span className="text-blue">EDU</span>CATION
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-1/3" />
