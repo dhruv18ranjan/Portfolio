@@ -1,5 +1,11 @@
 import React from 'react'
 
+import twitter from "../assets/twitter.png";
+import linkedin from "../assets/linkedin.png";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
+
+
 export const SocialMediaIcons = () => {
   return (
     <div className='flex justify-center md:justify-start my-10 gap-10'>
@@ -8,28 +14,28 @@ export const SocialMediaIcons = () => {
             target="_blank"
             rel='noreferrer'
         >
-            <img src="../assets/linkedin.png" alt="linkedin-link" />
+            <img src={linkedin} alt="linkedin-link" />
         </a>
         <a className="hover:opacity-50 transition duration-500"
             href="https://www.twitter.com"
             target="_blank"
             rel='noreferrer'
         >
-            <img src="../assets/twitter.png" alt="twitter-link" />
+            <img src={twitter} alt="twitter-link" />
         </a>
         <a className="hover:opacity-50 transition duration-500"
             href="https://www.facebook.com"
             target="_blank"
             rel='noreferrer'
         >
-            <img src="../assets/facebook.png" alt="facebook-link" />
+            <img src={facebook} alt="facebook-link" />
         </a>
         <a className="hover:opacity-50 transition duration-500"
             href="https://www.instagram.com"
             target="_blank"
             rel='noreferrer'
         >
-            <img src="../assets/instagram.png" alt="instagram-link" />
+            <img src={instagram} alt="instagram-link" />
         </a>
     </div>
   )
