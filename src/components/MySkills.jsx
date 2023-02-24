@@ -2,6 +2,7 @@ import { motion} from 'framer-motion'
 import React from 'react'
 import useMediaQuery from '../hooks/useMediaQuery'
 import LineGradient from './LineGradient'
+import me3 from "../assets/me3.png"
 import Skills from './Skills'
 
 const MySkills = () => {
@@ -9,7 +10,7 @@ const MySkills = () => {
   return (
     <>
     <section id='skills' className='pt-10 pb-24'>
-        <div className='md:flex md:justify-between md:gap:16 mt-32'>
+        <div className='md:flex md:justify-between md:gap:16 mt-32 relative left-20'>
             <motion.div  className='md:w-1/3'
                 initial="hidden" whileInView="visible"
                 viewport={{once:true,amount:0.5}}
@@ -30,11 +31,11 @@ const MySkills = () => {
                    <div
                         className=""
                     >
-                        <img src="assets\me3.png" alt="profile" className='z-10 h-[500px] relative right-[220px] bottom-[70px]' />
+                        <img src={me3} alt="profile" className='z-10 h-[500px] relative right-[220px] bottom-[70px]' />
                     </div>
                 ):(
                     <div>
-                        <img src="assets\me3.png" alt="profile" className='z-10 h-[400px] relative left-[100px] ' />
+                    <img src={me3} alt="profile" className='z-10 h-[400px] relative left-[100px] ' />
                     </div>
                 )}
             </div>

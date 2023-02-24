@@ -49,11 +49,15 @@ import LineGradient from "./LineGradient";
                         dateClassName="date"
                         iconStyle={schoolIconStyles}
                         icon={<SchoolIcon />
+                        
                     }
                         >
+                          
+                            
                         <h3 className="vertical-timeline-element-title text-white font-bold pb-1">{element.title}</h3>
                         <h5 className="vertical-timeline-element-subtitle text-white font-extralight">{element.location}</h5>
                         <p id="description" className="text-white font-light">{element.description}</p>
+                       
                         </VerticalTimelineElement>
                     )
                 })

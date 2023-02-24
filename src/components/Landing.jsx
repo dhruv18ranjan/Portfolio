@@ -1,5 +1,6 @@
 import React from 'react'
 import useMediaQuery from '../hooks/useMediaQuery';
+import me from "../assets/me.png"
 import { motion } from 'framer-motion';
 
 
@@ -12,18 +13,18 @@ const Landing = ({ setSelectedPage }) => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
     return (
-        <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-16 py-10'>
+        <section id='home' className='md:flex relative left-16 md:justify-between md:items-center md:h-full gap-16 py-10'>
             {/* image */}
             <div className='md:order-2 flex justify-center basis-3/5 z-10 mt-12 md:mt-32'>
                 {isAboveMediumScreens ? (
                     <div
                         >
-                        <img src="assets/me.png" alt="profile" className='hover:filter hover:saturate-200 
+                        <img src={me} alt="profile" className='hover:filter hover:saturate-200 
                     transition duration-500 relative bottom-10 h-[600px] z-10 w-full max-w-[450px] md:max-w-[450px] ' />
                     </div>
                 ) : (
                     <div>
-                        <img src="assets/me.png" alt="profile" className='hover:filter hover:saturate-200 
+                        <img src={me} alt="profile" className='hover:filter hover:saturate-200 
                     transition duration-500  h-[550px] z-10 w-full max-w-[350px] md:max-w-[400px] ' />
                     </div>
                 )}
