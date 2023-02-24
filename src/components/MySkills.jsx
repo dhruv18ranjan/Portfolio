@@ -10,8 +10,8 @@ const MySkills = () => {
   return (
     <>
     <section id='skills' className='pt-10 pb-24'>
-        <div className='md:flex md:justify-between md:gap:16 mt-32 relative left-20'>
-            <motion.div  className='md:w-1/3'
+        <div className='md:flex md:justify-between xs:relative xs:right-16 md:gap:16 mt-32 relative left-20'>
+            <motion.div  className='md:w-1/3 xs:relative xs:right-16'
                 initial="hidden" whileInView="visible"
                 viewport={{once:true,amount:0.5}}
                 transition={{duration:0.5}}
@@ -26,7 +26,7 @@ const MySkills = () => {
                 Asperiores animi enim ex, porro ab repellat autem illum reiciendis laudantium magni.</p>
             </motion.div>
 
-            <div className='mt-12 md:mt-0'>
+            <div className='mt-12 md:mt-0 xs:relative xs:right-20'>
                 {isAboveMediumScreens ? (
                    <div
                         className=""

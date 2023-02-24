@@ -13,7 +13,8 @@ const Landing = ({ setSelectedPage }) => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
     return (
-        <section id='home' className='md:flex relative left-16 md:justify-between md:items-center md:h-full gap-16 py-10'>
+        <section id='home' className='md:flex relative left-16 md:justify-between
+         md:items-center md:h-full sm:relative gap-16 py-10'>
             {/* image */}
             <div className='md:order-2 flex justify-center basis-3/5 z-10 mt-12 md:mt-32'>
                 {isAboveMediumScreens ? (
@@ -25,12 +26,12 @@ const Landing = ({ setSelectedPage }) => {
                 ) : (
                     <div>
                         <img src={me} alt="profile" className='hover:filter hover:saturate-200 
-                    transition duration-500  h-[550px] z-10 w-full max-w-[350px] md:max-w-[400px] ' />
+                    transition duration-500  h-[550px] z-10 w-full max-w-[350px] relative right-12 md:max-w-[400px] ' />
                     </div>
                 )}
             </div>
             {/* main */}
-            <div className='z-30 basis-2/5 mt-12 md:mt-32'>
+            <div className='z-30 basis-2/5 mt-12 xs:relative xs:right-16 md:mt-32'>
                 {/* heading */}
                 <motion.div initial="hidden" whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}

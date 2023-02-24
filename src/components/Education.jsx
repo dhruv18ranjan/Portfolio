@@ -28,7 +28,7 @@ import LineGradient from "./LineGradient";
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div>
+        <div >
           <p className="font-playfair font-semibold text-4xl">
           <span className="text-blue text-4xl">EDU</span>CATION
           </p>
@@ -51,9 +51,7 @@ import LineGradient from "./LineGradient";
                         icon={<SchoolIcon />
                         
                     }
-                        >
-                          
-                            
+                        >             
                         <h3 className="vertical-timeline-element-title text-white font-bold pb-1">{element.title}</h3>
                         <h5 className="vertical-timeline-element-subtitle text-white font-extralight">{element.location}</h5>
                         <p id="description" className="text-white font-light">{element.description}</p>

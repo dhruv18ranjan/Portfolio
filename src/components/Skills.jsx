@@ -78,9 +78,11 @@ const Skills = () => {
     >
       <div className=" mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
-          <p className="text-4xl font-bold  p-2 inline">
+          <div className="xs:flex justify-center">
+          <p className="text-4xl xs:text-4xl font-bold  p-2 inline">
           These are the technologies I've worked with
           </p>
+          </div>
           <br /> <br />
           <LineGradient />
           <p className="py-6"></p>
