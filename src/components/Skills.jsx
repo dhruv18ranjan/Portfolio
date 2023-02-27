@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -90,19 +90,26 @@ const Skills = () => {
 
         <div className="w-full grid  sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
-            <div
-              key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 m-2 rounded-lg ${style}`}
-            >
+          
+          <motion.div  className={`shadow-md hover:scale-105 duration-500 py-2 m-2 rounded-lg ${style}`}
+          key={id}
+                initial="hidden" whileInView="visible"
+                viewport={{once:true,amount:0.5}}
+                transition={{duration:0.5}}
+                variants={{hidden:{opacity:0 , x:-50},
+                visible:{opacity:1, x:0}
+              }}>      
+
               <img src={src} alt="" className="w-20 mx-auto" />
+
               <p className="mt-4">{title}</p>
+                        </motion.div>
               
-            </div>       
+              
           ))}
         </div>
       </div>
     </div>
-    
   );
 };
 
