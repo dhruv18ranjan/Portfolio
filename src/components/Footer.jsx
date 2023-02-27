@@ -2,8 +2,8 @@ import { SocialMediaIcons } from "./SocialMediaIcons";
 
 const Footer = () => {
   return (
-    <footer className="h-46 bg-blue w-[100%] flex xs:w-[98.9vw] ">
-      <div className="w-full sm:w-full xs:w-full mx-auto">
+    <footer className="h-64 bg-blue pt-10 relative top-20">
+      <div className="w-10/12 mx-auto">
         <SocialMediaIcons />
         <div className="md:flex justify-between  md:justify-between text-center ">
           <p className="font-playfair font-semibold text-2xl text-white">

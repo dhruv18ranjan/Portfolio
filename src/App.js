@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import DotGroup from "./components/DotGroup";
-import  Education  from "./components/Education";
+import Education from "./components/Education";
 import Landing from "./components/Landing";
 import LineGradient from "./components/LineGradient";
 import MySkills from "./components/MySkills";
@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact"
 import useMediaQuery from "./hooks/useMediaQuery";
 import Footer from "./components/Footer";
+import { motion } from "framer-motion";
 
 function App() {
 
@@ -35,33 +36,65 @@ function App() {
           />
         )}
 
-        <Landing setSelectedPage={selectedPage} />
-
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("home")}
+        >
+          <Landing setSelectedPage={setSelectedPage} />
+          </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
-        <MySkills />
-      </div >
+
+      <div className="w-5/6 mx-auto  ">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("skills")}
+        >
+          <MySkills />
+        </motion.div>
+      </div>
+      
       <LineGradient />
-    
-    <div>
-      <Projects />
-    </div>
+
+      <div className="w-5/6 mx-auto">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("projects")}
+        >
+          <Projects />
+        </motion.div>
+      </div>
 
       <LineGradient />
-    
-    <div>
+
+      <div className="w-5/6 mx-auto ">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("testimonials")}
+        >
           <Education />
-    </div>
+        </motion.div>
+      </div>
+
       <LineGradient />
-    
-    <div>
+
+      <div className="w-5/6 mx-auto md:h-full">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("contact")}
+        >
           <Contact />
-    </div>
-        
-        <div>
-          <Footer />
-        </div>
+        </motion.div>
+      </div>
+
+      
+        <Footer />
+   
 
     </div>
   );

@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-28 w-[92%] ">
+    <section id="contact" className="contact py-48">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -32,8 +32,8 @@ const Contact = () => {
         className="flex justify-center w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl  relative left-[50px]">
-            <span className="text-blue text-4xl sm:text-4xl">CONTACT ME</span> TO GET STARTED
+          <p className="font-playfair font-semibold text-4xl ">
+            <span className="text-blue ">CONTACT ME</span> TO GET STARTED
           </p>
           <div className="flex md:justify-end my-5 mb-16">
             <LineGradient width="mx-auto w-3/4"/>
@@ -73,10 +73,10 @@ const Contact = () => {
             onSubmit={onSubmit}
             action="https://formsubmit.co/dhruv07ranjan@gmail.com"
             method="POST"
-            className="relative left-[60px]"
+            
           >
             <input
-              className="w-4/5 bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -92,7 +92,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-4/5 bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -108,7 +108,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-4/5 bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
               placeholder="MESSAGE"
               rows="4"

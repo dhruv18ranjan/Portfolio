@@ -10,8 +10,8 @@ const MySkills = () => {
   return (
     <>
     <section id='skills' className='pt-10 pb-24'>
-        <div className='md:flex md:justify-between xs:relative xs:right-16 md:gap:16 mt-32 relative left-20'>
-            <motion.div  className='md:w-1/3 xs:relative xs:right-16'
+        <div className='md:flex md:justify-between md:gap-16 mt-32'>
+            <motion.div  className='md:w-1/3 '
                 initial="hidden" whileInView="visible"
                 viewport={{once:true,amount:0.5}}
                 transition={{duration:0.5}}
@@ -26,7 +26,7 @@ const MySkills = () => {
                 Asperiores animi enim ex, porro ab repellat autem illum reiciendis laudantium magni.</p>
             </motion.div>
 
-            <div className='mt-12 md:mt-0 xs:relative xs:right-20'>
+            <div className='mt-16 md:mt-0'>
                 {isAboveMediumScreens ? (
                    <div
                         className=""
@@ -34,8 +34,8 @@ const MySkills = () => {
                         <img src={me3} alt="profile" className='z-10 h-[500px] relative right-[220px] bottom-[70px]' />
                     </div>
                 ):(
-                    <div>
-                    <img src={me3} alt="profile" className='z-10 h-[400px] relative left-[100px] ' />
+                    <div className='flex justify-center'>
+                    <img src={me3} alt="profile" className='z-10 h-[400px]' />
                     </div>
                 )}
             </div>
