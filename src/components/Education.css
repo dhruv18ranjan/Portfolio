@@ -17,7 +17,7 @@ body {
   }
   
   .vertical-timeline-element-content {
-    box-shadow: 0 4px 5px 0 rgba(214, 210, 210, 0.468), 0 6px 10px 0 rgba(222, 214, 214, 0.299) !important;
+    
     padding: 2em 3em !important;
     background-color: #2CBCE9;
   }
@@ -48,7 +48,5 @@ body {
     }
   }
 
- .vertical-timeline .vertical-timeline-element .vertical-timeline-element-icon{
-    background: white;
-  }
+ 
   

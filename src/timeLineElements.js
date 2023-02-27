@@ -2,7 +2,7 @@ let timelineElements = [
     {
       id: 1,
       title: "G.L. Bajaj Institute of technology and management",
-      location: "Greater noida, uttarPradesh",
+      location: "Greater noida, Uttar Pradesh",
       description:
         "Btech In Information Technology",
       date: "December 2020 - present",
