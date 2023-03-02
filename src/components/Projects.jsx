@@ -24,10 +24,10 @@ const Project = ({ title ,data,href}) => {
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
+      <a target="_blank" href={href}> <p className="text-2xl font-playfair">{title}</p></a>
+        <a target="_blank" href={href}><p className="mt-7">
           {data}
-        </p>
+        </p></a>
       </div>
      <a target="_blank" href={href}> <img src={`assets/${projectTitle}.jpeg`} alt={projectTitle}  /></a>
     </motion.div>
