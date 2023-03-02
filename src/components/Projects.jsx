@@ -29,7 +29,7 @@ const Project = ({ title ,data,href}) => {
           {data}
         </p></a>
       </div>
-     <a target="_blank" href={href}> <img src={`assets/${projectTitle}.jpeg`} alt={projectTitle}  /></a>
+     <a target="_blank" href={href}> <img height="400px" width="400px" src={`assets/${projectTitle}.jpeg`} alt={projectTitle}  /></a>
     </motion.div>
   );
 };
