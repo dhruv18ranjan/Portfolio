@@ -16,7 +16,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title ,data}) => {
+const Project = ({ title ,data,href}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -29,7 +29,7 @@ const Project = ({ title ,data}) => {
           {data}
         </p>
       </div>
-      <img src={`assets/${projectTitle}.jpeg`} alt={projectTitle} />
+     <a target="_blank" href={href}> <img src={`assets/${projectTitle}.jpeg`} alt={projectTitle}  /></a>
     </motion.div>
   );
 };
@@ -80,17 +80,17 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" data={data[0].desc1} />
-          <Project title="Project 2" data={data[1].desc2}/>
+          <Project title="Project 1" data={data[0].desc1} href="https://dhruv18ranjan.github.io/Portfolio/" />
+          <Project title="Project 2" data={data[1].desc2} href="https://youthoob-d.vercel.app/"/>
 
           {/* ROW 2 */}
-          <Project title="Project 3" data={data[2].desc3} />
-          <Project title="Project 4" data={data[3].desc4}/>
-          <Project title="Project 5" data={data[4].desc5} />
+          <Project title="Project 3" data={data[2].desc3} href="https://sigmakart-app.onrender.com/" />
+          <Project title="Project 4" data={data[3].desc4} href="https://todo-react-dhruv.vercel.app/"/>
+          <Project title="Project 5" data={data[4].desc5} href="https://dhruv18ranjan.github.io/KBC-quiz-app-react/" />
 
           {/* ROW 3 */}
-          <Project title="Project 6" data={data[5].desc6}/>
-          <Project title="Project 7" data={data[6].desc7}/>
+          <Project title="Project 6" data={data[5].desc6} href="https://tic-tac-toe-dhruv.vercel.app/"/>
+          <Project title="Project 7" data={data[6].desc7} href="https://tindog-two-lyart.vercel.app/"/>
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
