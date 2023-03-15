@@ -18,7 +18,7 @@ const Landing = ({ setSelectedPage }) => {
             <div className='basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2'>
                 {isAboveMediumScreens ? (
                     <div className='relative z-0 ml-20'
-                        >
+                    >
                         <img src={me} alt="profile" className='relative bottom-20 right-16 h-[600px] z-10 w-full max-w-[400px] md:max-w-[600px] ' />
                     </div>
                 ) : (
@@ -41,13 +41,13 @@ const Landing = ({ setSelectedPage }) => {
                     <p className='text-6xl font-playfair z-10 text-center md:text-start'>
                         Dhruv {""}
                         <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue relative inline-block">
-    <span class="relative text-white">Ranjan</span>
+                            <span class="relative text-white">Ranjan</span>
                         </span>
                     </p>
-                    <p className="mt-10 mb-7 text-sm text-center  md:text-start ">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus in corrupti dolore
-                        molestiae sed molestias dolorum. Vel, aspernatur qui cupiditate, id, repellendus voluptatem
-                        magni aliquid porro quasi laudantium asperiores tempore!
+                    <p className="mt-10 mb-7 text-md text-center  md:text-start ">
+                        Currently pursuing my B.Tech in IT from GL Bajaj Institute of Technology and management, with a focus on frontend development. Proficient in 
+                        HTML, CSS, JavaScript , React and many more, and currently learning the MERN stack. Seeking opportunities to 
+                        further develop my skills in web development and contribute to building innovative and impactful projects
                     </p>
                 </motion.div>
                 {/* call to actions */}

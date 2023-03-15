@@ -58,9 +58,9 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+        "I have created several projects in frontend development using HTML, CSS, JavaScript, and React, 
+        showcasing my ability to design and develop engaging and responsive web applications.
+        In addition, I am currently learning and enhancing my skills in full-stack development, including the MERN stack.
         </p>
       </motion.div>
 

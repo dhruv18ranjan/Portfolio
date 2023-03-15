@@ -22,8 +22,9 @@ const MySkills = () => {
                     MY <span className='text-blue'>SKILLS</span>
                 </p>
                 <LineGradient width='w-1/3' />
-                <p className='mt-10 mb-7'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Asperiores animi enim ex, porro ab repellat autem illum reiciendis laudantium magni.</p>
+                <p className='mt-10 mb-7 text-md'>As a frontend developer, I excel in HTML, CSS, JavaScript, and React. Currently, 
+                I am expanding my skills in Next.js and TypeScript, and have a strong interest in the MERN stack. I am committed to 
+                delivering high-quality work and continuously expanding my knowledge to build innovative projects.</p>
             </motion.div>
 
             <div className='mt-16 md:mt-0'>
