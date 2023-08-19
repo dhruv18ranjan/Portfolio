@@ -94,7 +94,7 @@ const Skills = () => {
           <motion.div  className={`shadow-md hover:scale-105 duration-500 py-2 m-2 rounded-lg ${style}`}
           key={id}
                 initial="hidden" whileInView="visible"
-                viewport={{once:true,amount:0.5}}
+                viewport={{once:false,amount:0.5}}
                 transition={{duration:0.5}}
                 variants={{hidden:{opacity:0 , x:-50},
                 visible:{opacity:1, x:0}
