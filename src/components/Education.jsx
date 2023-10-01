@@ -4,7 +4,6 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-
 import { ReactComponent as SchoolIcon } from "../assets/school.svg";
 import {motion} from  "framer-motion"
 import "react-vertical-timeline-component/style.min.css";
@@ -30,7 +29,7 @@ import LineGradient from "./LineGradient";
       >
         <div >
           <p className="font-playfair font-semibold text-4xl">
-          <span className="text-blue text-4xl">EDU</span>CATION
+          <span className="text-blue text-4xl">EXP</span>ERIENCE
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-1/3" />
@@ -52,9 +51,9 @@ import LineGradient from "./LineGradient";
                         
                     }
                         >             
-                        <h3 className="vertical-timeline-element-title text-black font-bold ">{element.title}</h3>
+                        <h3 className="vertical-timeline-element-title text-black  text-xl font-bold ">{element.title}</h3>
                         <h5 className="vertical-timeline-element-subtitle text-black font-extralight">{element.location}</h5>
-                        <p id="description" className="text-black font-light">{element.description}</p>
+                        <p id="description" className="text-black italic  font-semibold">{element.description}</p>
                        
                         </VerticalTimelineElement>
                     )

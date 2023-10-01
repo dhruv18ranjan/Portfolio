@@ -1,6 +1,25 @@
 export const timelineElements = [
     {
       id: 1,
+      title: "Wissenhive",
+      location: "Noida , Uttar Pradesh",
+      description:
+        "Frontend Developer Intern",
+      date: "September 2023 - present",
+      icon: "school",
+    },
+    {
+      id: 2,
+      title: "Laserpay",
+      location: "Noida , Uttar Pradesh",
+      description:
+        "Frontend Developer Intern",
+      date: "July 2023 - September 2023",
+      icon: "school",
+    },
+   
+    {
+      id: 3,
       title: "G.L. Bajaj Institute of technology and management",
       location: "Greater noida, Uttar Pradesh",
       description:
@@ -20,7 +39,7 @@ export const timelineElements = [
     {
       id: 3,
       title: "St Thomas School Indirapuram",
-      location: "Ghaziabad, UttarPradesh",
+      location: "Ghaziabad, Uttar Pradesh",
       description:
         "HighSchool (Xth)",
       date: "April 2007 - June 2018",
